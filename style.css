@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-image: url("./utils/backgroundimg.jpg");
+
+    height: 100vh;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Edu SA Beginner', cursive;
+}
+.header {
+    background-image: url("./utils/headerfooter.jpg");
+    width: 100%;
+    height: 95px;
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+}
+.footer {
+    background-image: url("./utils/headerfooter.jpg");
+    width: 100%;
+    height: 60px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display: flex;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.wrapper {
+    display: none;
+}
+
+
+
+.main-menu {
+    background-image: url(https://media.istockphoto.com/vectors/white-noughts-and-crosses-on-a-black-background-seamless-pattern-vector-id1350091745?k=20&m=1350091745&s=612x612&w=0&h=WzjELWSHURWYFPupA8LvcdJdXGh8rJAa_sVY7o882IU=);
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 40px;
+    width: 700px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main-menu.unactive {
+    display: none;
+} 
+
+.main-menu .choices {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+}
+
+.player, .ai, .start {
+    background-color: #f5f5f5;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.start {
+    border: 2px solid black;
+    margin-right: 40px;
+}
+.player:focus, .ai:focus {
+    outline: 2px solid black;
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+
+}
+
+.game-board {
+    align-self: center;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    width: 300px;
+    height: 300px;
+}
+
+.message, .center{
+    font-size: 30px;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    padding-bottom: 50px;
+    margin-top: 40px;
+    gap: 50px;
+
+}
+
+.restart-button, .play-again {
+    background-color: #f5f5f5;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.cell {
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    background-color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.cell:hover {
+    background-color: black;
+    color: white;
+}
+
+.wrapper.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.score {
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+.start:hover {
+    background-color: black;
+    border: 2px solid white;
+    color:white;
+}

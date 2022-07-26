@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="logic.js" async defer></script>
+    <title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+
+
+    <div class="main-menu" id="menu">
+        <div class="choices">
+            <button class="player" id="player">Player vs. Player</button>
+            <button class="ai" id="ai">Currently Unavailable!</button>
+        </div>
+        <button class="start" id="start">
+            Start Game
+        </button>
+    </div>
+    <div class="wrapper" id="wrapper">
+        <div class="score">
+            <p>Player One<br>Score: <span id="playerOneScore">0</span></p>
+        </div>
+        <div class="main" id="mainContainer">
+            <div class="message" id="message">
+                Player X's turn
+            </div>
+            <div class="game-board">
+                <div class="cell" data-index="0"></div>
+                <div class="cell" data-index="1"></div>
+                <div class="cell" data-index="2"></div>
+                <div class="cell" data-index="3"></div>
+                <div class="cell" data-index="4"></div>
+                <div class="cell" data-index="5"></div>
+                <div class="cell" data-index="6"></div>
+                <div class="cell" data-index="7"></div>
+                <div class="cell" data-index="8"></div>
+            </div>
+            <div class="center">
+                <button class="play-again" id="playAgainButton">Play Again</button>
+                <button class="restart-button" id="restartButton">Restart</button>
+            </div>
+        </div>
+        <div class="score">
+            <p>Player Two<br>Score: <span id="playerTwoScore">0</span></p>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="footer">
+        <p>&copy; Copyright 2022</p>
+    </div>
+</body>
+</html>
